@@ -4,5 +4,6 @@
 ### Fall 2016 
 ### Author: *Christopher Whetsel*
 
-[Link to the project's readme](../blob/master/LICENSE)
+Battleship boardgame with basic UI and AI opponent
+[Link to the project's documentation](Cjwgr5BattleShip/Project Documentation.txt)
 
