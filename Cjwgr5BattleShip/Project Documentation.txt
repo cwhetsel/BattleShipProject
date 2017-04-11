@@ -1,0 +1,51 @@
+Christopher WHetsel 
+CS 3330 
+BattleShip Final Project
+December 2016
+
+Project Documentation
+
+Application Purpose and Functionality
+	The Application i created is the classic game of BattleShip played against a simple AI. You being by placing 5 ships of lengths 5, 4, 3, 3, and 2 respectively on a 10x 10 grid. 
+	Then you proceed to geuss the locations of the AI's ships, one grid swaure at a time until the AI has sunk all of your ships or you have sunken all of its ships. 
+	
+	The game opens on a scene where you are presented three options of difficulty, each with a calculate percentage of the games a human player has one against that AI: Easy, Medium and Impossible. You choose your difficulty and proceed to the game screen. 
+	Instructions will apprear in a label at the bottom of the game screen. 
+	There you will place your ships by clicking grid squares with your mouse. After all ships have been legally placed, you choose a square every turn trying to locate 
+	the Ai's ships and hit them all to sink them. Once you or the AI have no ships remaining, the game ends and an alert pops up asking if you wish to start a new game of exit. 
+	Choosing new game will return you to the opeing screen and choosing exit will close the program. 
+	
+Architechture
+	The MVC architechture was used. The Model is defined in ModelUML.pdf. It consists of a Player abstract class extended by a Human Class and an AI class, a Ship class, and a Game class which 
+	handles the dealing with the Ai and Human's turns, placing ships, determining hits and misses, checking game over, and all dealings with the Human and Ai classes. 
+	
+	The View is the FXMl for the two scenes which produce the UI which the human player interacts with: BattleShipFXML.fxml and BattleSipGameStart.fxml. 
+	
+	Each FXML graph has its on controller which handles the Human user's interacts with the UI and passes information back and forth with the game class which tells 
+	the controller how to update the UI; 
+
+Requirements
+	1.Object	oriented	elements	that	you	write	the	code	for:
+		a. Classes
+			There are multiple classes including Player, Ship, AI, Human, and Game
+		b. Subclasses
+			AI and Human are subclasses of Player
+		3. Abstract class or interface
+			Player is and abstract class
+	2. Code	elements	that	you	utilize:
+		a. Collection Class	
+			ArrayList is used extensively throughout the application such as in the Game classes members humanPositionts and aiPositions
+		b. Exception Handling
+			the Game class handle IOException in its readFileGameWinInfo() method and its printGameInfoMethod. The BattleShipFXMLController also handles IOExceptions in the gameOver() methods
+	3. The Application must have a clearly defined model
+		See the ModelUML.pdf. 
+	4. The	UI	must	utilize	multiple	scenes	and/or	a	scene	where	the	contents	of	the	scene	graph	are	changed	based	on	application	state.
+		the UI uses two scenes: BattleSipGameStart.fxml and BattleShipFXML.fxml. The contents of BattleShipFXML.fxml change based on game start. Such as the Labels of the GridPane that makes oup
+		the board change color based on if they are the location of a ship, a hit, a miss or a sunk ship. 
+	5. There	must	be	a	way	to	access	“About”	information	that	includes	information	about	you	and	the	application.
+		Under the "About" menu, click on "Information" and an alert containing basic info abou the game and me will pop up. 
+	6. The	application	must save data	and	load data.	The	target	for	saving/loading	data can	be	files,	a	network	service, and/or	a database.
+		Game loads data from gameInfo.txt which contains a count of how many games each AI has one against a human and how many games a human has won agsint it in its readFileGameWinInfo() method
+		This percentage of human wins out of total games is displayed on the GameStart screen below each difficulty button. 
+		Game also saves and updates these totals at the end of each game. Printing the new data to gameInfo.txt in its printGameInfo() method.
+	

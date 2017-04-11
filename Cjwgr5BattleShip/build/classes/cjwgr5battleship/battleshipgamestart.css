@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+#startPane {
+    -fx-background-image: url("bsbackground.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 630 300;
+    -fx-background-position: center center;
+}
