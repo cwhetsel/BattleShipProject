@@ -7,5 +7,5 @@
 Battleship boardgame with basic UI and AI opponent
 
 
-[Link to the project's documentation](BattleShipProject/Cjwgr5BattleShip/ProjectDocumentation.txt)
+[Link to the project's documentation](Cjwgr5BattleShip/ProjectDocumentation.txt)
 
