@@ -5,5 +5,7 @@
 ### Author: *Christopher Whetsel*
 
 Battleship boardgame with basic UI and AI opponent
-[Link to the project's documentation](Cjwgr5BattleShip/Project Documentation.txt)
+
+
+[Link to the project's documentation](/Cjwgr5BattleShip/Project Documentation.txt)
 
