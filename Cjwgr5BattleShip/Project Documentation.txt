@@ -6,7 +6,7 @@ December 2016
 Project Documentation
 
 Application Purpose and Functionality
-	The Application i created is the classic game of BattleShip played against a simple AI. You being by placing 5 ships of lengths 5, 4, 3, 3, and 2 respectively on a 10x 10 grid. 
+	The Application I created is the classic game of BattleShip played against a simple AI. You being by placing 5 ships of lengths 5, 4, 3, 3, and 2 respectively on a 10x 10 grid. 
 	Then you proceed to geuss the locations of the AI's ships, one grid swaure at a time until the AI has sunk all of your ships or you have sunken all of its ships. 
 	
 	The game opens on a scene where you are presented three options of difficulty, each with a calculate percentage of the games a human player has one against that AI: Easy, Medium and Impossible. You choose your difficulty and proceed to the game screen. 
